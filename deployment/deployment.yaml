@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: city-rest-api
+  name: city-rest-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: city-rest-api
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: city-rest-api
+    spec:
+      containers:
+      - image: sandipdocker1990/city-rest-api-gitops:1.1.0
+        name: city-rest-api
+        imagePullPolicy: Never
+        resources: {}
+        ports:
+          - containerPort: 8002
+status: {}
