@@ -2,6 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   creationTimestamp: null
+  annotations:
+    fluxcd.io/tag.city-rest-api: semver:~1.1
+    fluxcd.io/automated: 'true'
   labels:
     app: city-rest-api
   name: city-rest-api
