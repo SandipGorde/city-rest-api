@@ -25,10 +25,11 @@ public class CityController {
 
         String city ="Mumbai";
         String city2="Delhi";
-
+        String city3="Brussels";
+        
         cityList.add(city);
         cityList.add(city2);
-
+        cityList.add(city3);
         return cityList;
     }
 
