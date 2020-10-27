@@ -20,7 +20,7 @@ spec:
       containers:
       - image: sandipdocker1990/city-rest-api-gitops:1.1.0
         name: city-rest-api
-        imagePullPolicy: Never
+        imagePullPolicy: Always
         resources: {}
         ports:
           - containerPort: 8002
